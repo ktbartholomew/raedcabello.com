@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ueo pipefail
+
 curl -sL -o /tmp/rack-1.1.1 https://ec4a542dbf90c03b9f75-b342aba65414ad802720b41e8159cf45.ssl.cf5.rackcdn.com/1.1.1/Linux/amd64/rack
 chmod u+x /tmp/rack-1.1.1
 
