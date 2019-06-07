@@ -20,7 +20,7 @@
   }
 
   .social-links {
-    @include old-standard;
+    @include open-sans;
     font-size: 4vw;
     list-style-type: none;
     margin: 0;
@@ -31,9 +31,10 @@
 
       a {
         color: $cool-gray;
-        @include transition(color 0.1s ease-in-out);
+        transition: color 0.1s ease-in-out;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
           border-bottom: none;
 
           &.instagram {

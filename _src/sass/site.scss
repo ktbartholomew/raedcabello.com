@@ -1,21 +1,14 @@
-@import "bourbon/app/assets/stylesheets/bourbon";
-@import "normalize";
-@import "variables";
-@import "fonts";
+@import 'normalize';
+@import 'variables';
+@import 'fonts';
 
-@import "typography";
+@import 'typography';
 
-@import "components/buttons";
-@import "components/body";
-@import "components/colophon-modal";
-@import "components/footer";
-@import "components/forms";
-@import "components/header";
-@import "components/images";
-@import "components/lazy-image";
-@import "components/lightbox";
-@import "components/modal";
-@import "components/section";
+@import 'components/buttons';
+@import 'components/body';
+@import 'components/forms';
+@import 'components/header';
+@import 'components/images';
+@import 'components/modal';
 
-@import "pages/home";
-@import "pages/work";
+@import 'pages/home';

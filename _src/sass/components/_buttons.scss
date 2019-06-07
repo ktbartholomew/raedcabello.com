@@ -9,9 +9,11 @@
   padding: 1em 2em;
   text-decoration: none;
   text-shadow: none;
-  @include transition(background 0.1s ease-in-out, border 0.1s ease-in-out);
+  transition: background 0.1s ease-in-out, border 0.1s ease-in-out;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     border-color: tint($text-color, 50%);
     outline: none;
   }
@@ -20,7 +22,9 @@
     background: $blue;
     color: white;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       background: shade($blue, 10%);
       border-color: shade($blue, 20%);
       cursor: pointer;
@@ -31,7 +35,9 @@
     background: shade($green, 10%);
     color: white;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       background: shade($green, 15%);
       border-color: shade($green, 20%);
       cursor: pointer;
