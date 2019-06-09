@@ -23,6 +23,8 @@ markdown: kramdown
 error_mode: :strict
 
 exclude:
+  - Dockerfile
+  - README.md
   - package.json
   - node_modules
   - Gulpfile.js

@@ -12,6 +12,7 @@ textarea {
   font-size: 16px;
   padding: 0.5rem 1rem;
   transition: border-color 0.1s ease-in-out;
+  -webkit-transition: border-color 0.1s ease-in-out;
   width: 100%;
 
   &:focus {
