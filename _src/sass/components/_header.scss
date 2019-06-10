@@ -43,7 +43,8 @@
           padding: 0 0.5em;
           text-decoration: none;
 
-          &:hover, &:focus {
+          &:hover,
+          &:focus {
             background: rgba(white, 0.25);
             border-bottom: none;
             outline: none;

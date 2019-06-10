@@ -47,7 +47,8 @@
         transition: color 0.1s ease-in-out;
         -webkit-transition: color 0.1s ease-in-out;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
           border-bottom: none;
 
           &.instagram {
