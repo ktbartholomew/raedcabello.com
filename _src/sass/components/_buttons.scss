@@ -26,21 +26,21 @@
     &:hover,
     &:focus,
     &:active {
-      background: shade($blue, 10%);
-      border-color: shade($blue, 20%);
+      background: tint($blue, 10%);
+      border-color: tint($blue, 20%);
       cursor: pointer;
     }
   }
 
   &.green {
-    background: shade($green, 10%);
+    background: tint($green, 10%);
     color: white;
 
     &:hover,
     &:focus,
     &:active {
-      background: shade($green, 15%);
-      border-color: shade($green, 20%);
+      background: tint($green, 15%);
+      border-color: tint($green, 20%);
       cursor: pointer;
     }
   }

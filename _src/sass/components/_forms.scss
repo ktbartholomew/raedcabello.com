@@ -17,7 +17,7 @@ textarea {
 
   &:focus {
     outline: none;
-    border-color: $blue;
+    border: solid 1px $blue;
   }
 
   @media (min-width: 500px) {
