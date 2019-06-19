@@ -1,8 +1,8 @@
-input[type="text"],
-input[type="password"],
-input[type="tel"],
-input[type="email"],
-input[type="number"],
+input[type='text'],
+input[type='password'],
+input[type='tel'],
+input[type='email'],
+input[type='number'],
 textarea {
   background: white;
   border: solid 1px shade($body-bg, 10%);
@@ -11,12 +11,13 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   padding: 0.5rem 1rem;
-  @include transition(border-color 0.1s ease-in-out);
+  transition: border-color 0.1s ease-in-out;
+  -webkit-transition: border-color 0.1s ease-in-out;
   width: 100%;
 
   &:focus {
     outline: none;
-    border-color: $blue;
+    border: solid 1px $blue;
   }
 
   @media (min-width: 500px) {
@@ -38,11 +39,11 @@ textarea {
   }
 
   &.error {
-    input[type="text"],
-    input[type="password"],
-    input[type="tel"],
-    input[type="email"],
-    input[type="number"],
+    input[type='text'],
+    input[type='password'],
+    input[type='tel'],
+    input[type='email'],
+    input[type='number'],
     textarea {
       border-color: $red;
     }
@@ -89,6 +90,6 @@ textarea {
   }
 }
 
-input[name="_gotcha"] {
+input[name='_gotcha'] {
   display: none;
 }
