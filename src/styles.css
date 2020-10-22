@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind colors;
+
+body {
+  @apply bg-background;
+  font-family: Karla;
+  font-weight: 400;
+}
+
+a.link-block {
+  @apply text-black;
+  text-decoration: none;
+}
+
+a.link-block:hover, a.link-block:active {
+  text-decoration: none;
+}
