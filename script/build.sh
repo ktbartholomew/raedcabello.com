@@ -2,6 +2,6 @@
 
 set -ueo pipefail
 
-./node_modules/.bin/webpack
-./node_modules/.bin/gulp sass
-jekyll build
+npm i -g webpack-cli gatsby-cli
+npm ci --production
+NODE_ENV=production gatsby build
