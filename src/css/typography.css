@@ -30,15 +30,6 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
-a.nav-link {
-  @apply text-black;
-}
-
-a.nav-link:hover {
-  @apply text-blue;
-  text-decoration: none;
-}
-
 h1 {
   @apply font-accent;
   @apply font-bold;

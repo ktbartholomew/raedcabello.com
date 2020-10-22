@@ -9,6 +9,19 @@ body {
   font-weight: 400;
 }
 
+a.nav-link {
+  @apply text-black;
+}
+
+a.nav-link:hover {
+  @apply text-blue;
+  text-decoration: none;
+}
+
+a.nav-link.active {
+  @apply text-blue;
+}
+
 a.link-block {
   @apply text-black;
   text-decoration: none;

@@ -1,10 +1,10 @@
 import React from 'react';
 import HeaderNav from '../components/HeaderNav';
 
-const Main = ({ children }) => {
+const Main = ({ children, location }) => {
   return (
     <div className="container mx-auto">
-      <HeaderNav />
+      <HeaderNav location={location} />
       {children}
     </div>
   );

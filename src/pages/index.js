@@ -3,10 +3,10 @@ import Main from '../layouts/Main';
 
 import { graphql } from 'gatsby';
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location }) => {
   console.log(data);
   return (
-    <Main>
+    <Main location={location}>
       <div className="max-w-5xl mx-auto">
         <h1>I design &amp; build products for the web.</h1>
         <p className="text-xl mb-10">
