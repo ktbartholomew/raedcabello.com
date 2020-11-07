@@ -11,7 +11,7 @@ const Instagram = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%); */}
-      <linearGradient id="instagram-gradient" x1="0" y1="0" x2="1" y2="1">
+      <linearGradient id="instagram-gradient" x1="0" y1="1" x2="1" y2="0">
         <stop offset="16%" stopColor="#eea054" />
         <stop offset="50%" stopColor="#d64763" />
         <stop offset="84%" stopColor="#b62a99" />
