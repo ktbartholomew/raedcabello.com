@@ -30,3 +30,43 @@ a.link-block {
 a.link-block:hover, a.link-block:active {
   text-decoration: none;
 }
+
+.icon-linkedin > path {
+  fill: #000;
+  transition: fill 0.1s ease-in-out;
+}
+
+.icon-linkedin:hover > path, 
+.icon-linkedin:active > path {
+  fill: #0077b5;
+}
+
+.icon-twitter > path {
+  fill: #000;
+  transition: fill 0.1s ease-in-out;
+}
+
+.icon-twitter:hover > path, 
+.icon-twitter:active > path {
+  fill: #55acee;
+}
+
+.icon-spotify > path {
+  fill: #000;
+  transition: fill 0.1s ease-in-out;
+}
+
+.icon-spotify:hover > path, 
+.icon-spotify:active > path {
+  fill: #1ed760;
+}
+
+.icon-instagram > path {
+  fill: #000;
+  transition: fill 0.1s ease-in-out;
+}
+
+.icon-instagram:hover > path, 
+.icon-instagram:active > path {
+  fill: url('#instagram-gradient')
+}

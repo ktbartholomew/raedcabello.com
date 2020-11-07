@@ -16,7 +16,7 @@ const IndexPage = ({ data, location }) => {
           experience in multiple disciplines. You can find me on{' '}
           <a href="https://www.linkedin.com/in/raedcabello">LinkedIn</a>,{' '}
           <a href="https://twitter.com/raedcabello">Twitter</a>,{' '}
-          <a href="#">Spotify</a>, and{' '}
+          <a href="https://open.spotify.com/user/raedcabello">Spotify</a>, and{' '}
           <a href="https://instagram.com/raedcabello">Instagram</a>.
         </p>
 
