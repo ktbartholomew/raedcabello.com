@@ -1,0 +1,41 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-black;
+    @apply text-background;
+  }
+
+  a {
+    @apply text-lightgreen;
+  }
+
+  a.nav-link, a.link-block {
+    @apply text-background;
+  }
+
+  a.nav-link.active {
+    @apply text-lightgreen;
+  }
+
+  a.link-block:hover h1,
+  a.link-block:hover h2,
+  a.link-block:hover h3,
+  a.link-block:hover h4,
+  a.link-block:hover h5,
+  a.link-block:hover h6,
+  a.link-block:active h1,
+  a.link-block:active h2,
+  a.link-block:active h3,
+  a.link-block:active h4,
+  a.link-block:active h5,
+  a.link-block:active h6 {
+    @apply text-lightgreen;
+  }
+
+
+  .icon-linkedin > path,
+  .icon-twitter > path,
+  .icon-spotify > path,
+  .icon-instagram > path {
+    fill: theme('colors.background');
+  }
+}

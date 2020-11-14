@@ -8,7 +8,9 @@ const IndexPage = ({ data, location }) => {
   return (
     <Main location={location}>
       <div className="max-w-5xl mx-auto">
-        <h1>I design &amp; build products for the web.</h1>
+        <h1 className="dark:text-lightgreen">
+          I design &amp; build products for the web.
+        </h1>
         <p className="text-xl mb-10">
           I’m a Product Designer based in San Antonio, TX. I’m currently a Sr.
           Product Designer at H-E-B — an American privately held supermarket

@@ -18,13 +18,15 @@ const HeaderNav = ({ location }) => {
       <div>
         <Link to="/" className="block py-3">
           <span
-            className="rounded-full bg-blue inline-block align-middle mr-4"
+            className="rounded-full bg-blue dark:bg-lightgreen inline-block align-middle mr-4"
             style={{
               width: '1.125em',
               height: '1.125em',
             }}
           ></span>
-          <span className="align-middle text-black">Rae D. Cabello</span>
+          <span className="align-middle text-black dark:text-white">
+            Rae D. Cabello
+          </span>
         </Link>
       </div>
       <div className="flex justify-end">

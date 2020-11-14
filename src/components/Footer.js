@@ -20,7 +20,10 @@ const Footer = () => {
           style={{ width: '24rem' }}
           placeholder="E-mail address"
         />
-        <button className="bg-blue text-white p-3 ml-4" type="submit">
+        <button
+          className="bg-blue text-white dark:bg-lightgreen dark:text-black p-3 ml-4"
+          type="submit"
+        >
           Subscribe
         </button>
       </form>
