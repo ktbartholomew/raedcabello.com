@@ -23,16 +23,19 @@ const IndexPage = ({ data, location }) => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-10">
-          {data.allMdx.nodes.map((n) => {
+          {data.allFile.nodes.map((n) => {
             return (
               <div key={n.id}>
-                <a href={`/work/${n.slug}`} className="link-block text-black">
+                <a
+                  href={`/work/${n.childMdx.slug}`}
+                  className="link-block text-black"
+                >
                   <div
                     className="bg-placeholder mb-6"
                     style={{ height: '200px' }}
                   ></div>
-                  <h3>{n.frontmatter.title}</h3>
-                  <p>{n.excerpt}</p>
+                  <h3>{n.childMdx.frontmatter.title}</h3>
+                  <p>{n.childMdx.frontmatter.excerpt}</p>
                 </a>
               </div>
             );
@@ -46,16 +49,24 @@ const IndexPage = ({ data, location }) => {
 export default IndexPage;
 
 export const query = graphql`
-  query MyQuery {
-    allMdx(sort: { fields: [frontmatter___sort], order: ASC }) {
+  query IndexQuery {
+    allFile(
+      filter: { sourceInstanceName: { eq: "work" } }
+      sort: { fields: childMdx___frontmatter___sort, order: ASC }
+    ) {
       nodes {
         id
-        slug
-        frontmatter {
-          title
+        name
+        childMdx {
+          slug
+          body
+          frontmatter {
+            categories
+            title
+            excerpt
+            sort
+          }
         }
-        body
-        excerpt
       }
     }
   }

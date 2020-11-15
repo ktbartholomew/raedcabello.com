@@ -9,5 +9,12 @@ module.exports = {
         path: `${__dirname}/content/work`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'essays',
+        path: `${__dirname}/content/essays`,
+      },
+    },
   ],
 };

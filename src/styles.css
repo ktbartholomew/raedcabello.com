@@ -85,3 +85,16 @@ a.link-block:active h6 {
 .icon-instagram:active > path {
   fill: url('#instagram-gradient')
 }
+
+.essay.single h1 {
+  @apply mb-8;
+  @apply mx-auto;
+  @apply max-w-2xl;
+}
+
+.essay.single p {
+  @apply text-lg;
+  @apply mb-8;
+  @apply mx-auto;
+  @apply max-w-2xl;
+}
