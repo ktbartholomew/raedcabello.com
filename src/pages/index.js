@@ -28,7 +28,7 @@ const IndexPage = ({ data, location }) => {
               <div key={n.id}>
                 <a
                   href={`/work/${n.childMdx.slug}`}
-                  className="link-block text-black"
+                  className="link-block text-black-black"
                 >
                   <div
                     className="bg-placeholder mb-6"

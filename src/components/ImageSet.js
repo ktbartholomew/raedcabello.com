@@ -1,10 +1,11 @@
 import React from 'react';
 
-const ImageSet = () => {
+const ImageSet = ({ columns, children }) => {
   return (
-    <div className="grid md:grid-cols-2 gap-10">
-      <div className="bg-placeholder mb-6" style={{ height: '300px' }}></div>
-      <div className="bg-placeholder mb-6" style={{ height: '300px' }}></div>
+    <div
+      className={`grid md:grid-cols-${columns.toString() || '1'} gap-10 mb-6`}
+    >
+      {children}
     </div>
   );
 };

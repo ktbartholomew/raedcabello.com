@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
   body {
-    @apply bg-black;
+    @apply bg-black-black;
     @apply text-background;
   }
 
@@ -10,6 +10,11 @@
 
   a.nav-link, a.link-block {
     @apply text-background;
+  }
+
+  a.nav-link:hover
+   {
+    @apply text-lightgreen;
   }
 
   a.nav-link.active {
@@ -37,5 +42,9 @@
   .icon-spotify > path,
   .icon-instagram > path {
     fill: theme('colors.background');
+  }
+  
+  .essay.single blockquote p {
+    @apply text-lightgreen;
   }
 }

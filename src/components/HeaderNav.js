@@ -24,7 +24,7 @@ const HeaderNav = ({ location }) => {
               height: '1.125em',
             }}
           ></span>
-          <span className="align-middle text-black dark:text-white">
+          <span className="align-middle text-black-black dark:text-white">
             Rae D. Cabello
           </span>
         </Link>

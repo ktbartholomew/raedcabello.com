@@ -19,7 +19,10 @@ const WorkPage = ({ data, location }) => {
           {data.allMdx.nodes.map((n) => {
             return (
               <div key={n.id}>
-                <a href={`/work/${n.slug}`} className="link-block text-black">
+                <a
+                  href={`/work/${n.slug}`}
+                  className="link-block text-black-black"
+                >
                   <div
                     className="bg-placeholder mb-6"
                     style={{ height: '200px' }}

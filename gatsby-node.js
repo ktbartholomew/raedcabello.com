@@ -48,6 +48,9 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 categories
                 title
+                subtitle
+                publish_date
+                update_date
                 excerpt
                 sort
               }
@@ -65,4 +68,16 @@ exports.createPages = ({ graphql, actions }) => {
       });
     }),
   ]);
+};
+
+exports.createSchemaCustomization = ({ actions }) => {
+  actions.createTypes(`
+  type MdxFrontmatter {
+    title: String
+    subtitle: String
+    publish_date: Date
+    update_date: Date
+  }
+
+  `);
 };

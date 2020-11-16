@@ -10,7 +10,7 @@ body {
 }
 
 a.nav-link {
-  @apply text-black;
+  @apply text-black-black;
 }
 
 a.nav-link:hover {
@@ -23,7 +23,7 @@ a.nav-link.active {
 }
 
 a.link-block {
-  @apply text-black;
+  @apply text-black-black;
   text-decoration: none;
 }
 
@@ -86,15 +86,21 @@ a.link-block:active h6 {
   fill: url('#instagram-gradient')
 }
 
-.essay.single h1 {
+.essay.single > header {
+  @apply mb-8;
+  @apply mx-auto;
+  @apply max-w-2xl;
+  @apply text-lg;
+}
+
+.essay.single p {
   @apply mb-8;
   @apply mx-auto;
   @apply max-w-2xl;
 }
 
-.essay.single p {
-  @apply text-lg;
-  @apply mb-8;
-  @apply mx-auto;
-  @apply max-w-2xl;
+.essay.single blockquote p {
+  @apply max-w-4xl;
+  @apply text-2xl;
+  @apply text-blue;
 }
