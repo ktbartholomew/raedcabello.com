@@ -6,7 +6,7 @@ import Twitter from './icons/Twitter';
 
 const Footer = () => {
   return (
-    <div className="mt-24 mb-10">
+    <div className="mt-24 mb-10 px-4 lg:px-0">
       <form
         className="mb-10"
         onSubmit={(e) => {
@@ -17,11 +17,11 @@ const Footer = () => {
         <input
           type="text"
           className="p-3 bg-darkbg focus:bg-white"
-          style={{ width: '24rem' }}
+          style={{ width: '24rem', maxWidth: '100%' }}
           placeholder="E-mail address"
         />
         <button
-          className="bg-blue text-white dark:bg-lightgreen dark:text-black-black p-3 ml-4"
+          className="bg-blue text-white dark:bg-lightgreen dark:text-black-black p-3 md:ml-4"
           type="submit"
         >
           Subscribe

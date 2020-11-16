@@ -89,6 +89,7 @@ a.link-block:active h6 {
 .essay.single > header {
   @apply mb-8;
   @apply mx-auto;
+  @apply px-4;
   @apply max-w-2xl;
   @apply text-lg;
 }
@@ -96,6 +97,7 @@ a.link-block:active h6 {
 .essay.single p {
   @apply mb-8;
   @apply mx-auto;
+  @apply px-4;
   @apply max-w-2xl;
 }
 

@@ -7,7 +7,7 @@ const IndexPage = ({ data, location }) => {
   console.log(data);
   return (
     <Main location={location}>
-      <div className="max-w-5xl mx-auto">
+      <div className="container max-w-5xl mx-auto px-4 lg:px-0">
         <h1 className="dark:text-lightgreen">
           I design &amp; build products for the web.
         </h1>
@@ -22,7 +22,7 @@ const IndexPage = ({ data, location }) => {
           <a href="https://instagram.com/raedcabello">Instagram</a>.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="md:grid md:grid-cols-2 md:gap-10">
           {data.allFile.nodes.map((n) => {
             return (
               <div key={n.id}>

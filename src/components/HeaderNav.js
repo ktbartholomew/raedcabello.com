@@ -14,8 +14,8 @@ const HeaderNav = ({ location }) => {
     return '';
   };
   return (
-    <div className="grid grid-cols-2 gap-4 mt-4 mb-16 text-lg font-accent">
-      <div>
+    <div className="sm:grid sm:grid-cols-2 sm:gap-4 mt-4 mb-16 px-4 lg:px-0 text-lg font-accent">
+      <div className="mb-4 sm:mb-0">
         <Link to="/" className="block py-3">
           <span
             className="rounded-full bg-blue dark:bg-lightgreen inline-block align-middle mr-4"
@@ -29,28 +29,31 @@ const HeaderNav = ({ location }) => {
           </span>
         </Link>
       </div>
-      <div className="flex justify-end">
+      <div className="sm:text-center md:flex justify-end">
         <Link
           to="/work"
-          className={`nav-link p-3 px-8 ${activeClass(location, '/work')}`}
+          className={`nav-link p-3 sm:px-8 ${activeClass(location, '/work')}`}
         >
           Work
         </Link>
         <Link
           to="/essays"
-          className={`nav-link p-3 px-8 ${activeClass(location, '/essays')}`}
+          className={`nav-link p-3 sm:px-8 ${activeClass(location, '/essays')}`}
         >
           Essays
         </Link>
         <Link
           to="/reading"
-          className={`nav-link p-3 px-8 ${activeClass(location, '/reading')}`}
+          className={`nav-link p-3 sm:px-8 ${activeClass(
+            location,
+            '/reading'
+          )}`}
         >
           Reading
         </Link>
         <Link
           to="/about"
-          className={`nav-link pt-3 pl-8 ${activeClass(location, '/about')}`}
+          className={`nav-link pt-3 sm:pl-8 ${activeClass(location, '/about')}`}
         >
           About
         </Link>
