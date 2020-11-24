@@ -9,7 +9,13 @@ categories:
 ---
 
 import ImageSet from '../../src/components/ImageSet'
+import Image from '../../src/components/Image'
 import EndMark from '../../src/components/EndMark'
+
+import uiMock1 from './images/ui-mock.webp'
+import uiMock2 from './images/ui-mock-2.webp'
+import uiMock3 from './images/ui-mock-3.webp'
+import billCallahanPrint from './images/bill-callahan-print.jpg'
 
 I distinctly remember how much hatred I had in my heart when I lived through my first UI update. The year was 2009; I had just gotten my braces off and I was ready to smash that ‘Like’ button on my high school crush’s status when I logged into Facebook the first time that week. I was devastated to find that something looked a miss. Text navigation was replaced with iconography, event reminders were further down on the page, and it was altogether unsettling. Who did this? 
 
@@ -18,8 +24,8 @@ Years down the line, I find myself sitting at the other end of the table, workin
 
 <div className="mb-8 max-w-4xl mx-auto">
   <ImageSet columns={2}>
-    <img src="https://placekitten.com/800/600" alt="placeholder"/>
-    <img src="https://placekitten.com/800/599" alt="placeholder"/>
+    <Image src={uiMock1} caption="Negative space has a positive effect" />
+    <Image src={uiMock2} alt="placeholder" caption="A light and airy UI mockup" />
   </ImageSet>
 </div>
 
@@ -37,7 +43,7 @@ I distinctly remember how much hatred I had in my heart when I lived through my 
 
 <div className="mb-8 max-w-4xl mx-auto">
 <ImageSet columns={1}>
-  <img src="https://placekitten.com/1200/800" alt="placeholder"/>
+  <Image src={billCallahanPrint} alt="placeholder" caption="A single large image"/>
 </ImageSet>
 </div>
 
@@ -45,10 +51,9 @@ I distinctly remember how much hatred I had in my heart when I lived through my 
 
 <div className="mb-8 max-w-4xl mx-auto">
   <ImageSet columns={3}>
-    <img src="https://placekitten.com/240/380" alt="placeholder"/>
-    <img src="https://placekitten.com/240/380" alt="placeholder"/>
-    <img src="https://placekitten.com/240/380" alt="placeholder"/>
-
+    <Image src={uiMock1} alt="placeholder" />
+    <Image src={uiMock2} alt="placeholder" />
+    <Image src={uiMock3} alt="placeholder" />
   </ImageSet>
 </div>
 

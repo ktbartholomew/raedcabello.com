@@ -3,7 +3,6 @@ import Main from '../layouts/Main';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 const EssaySingle = ({ location, pageContext }) => {
-  console.log(pageContext);
   return (
     <Main location={location}>
       <article className="essay single">

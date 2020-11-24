@@ -5,7 +5,10 @@ exports.createPages = ({ graphql, actions }) => {
     graphql(`
       {
         allFile(
-          filter: { sourceInstanceName: { eq: "work" } }
+          filter: {
+            sourceInstanceName: { eq: "work" }
+            extension: { eq: "mdx" }
+          }
           sort: { fields: childMdx___frontmatter___sort, order: ASC }
         ) {
           nodes {
@@ -36,7 +39,10 @@ exports.createPages = ({ graphql, actions }) => {
     graphql(`
       query EssayQuery {
         allFile(
-          filter: { sourceInstanceName: { eq: "essays" } }
+          filter: {
+            sourceInstanceName: { eq: "essays" }
+            extension: { eq: "mdx" }
+          }
           sort: { fields: childMdx___frontmatter___sort, order: ASC }
         ) {
           nodes {

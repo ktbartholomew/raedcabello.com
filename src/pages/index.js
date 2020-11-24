@@ -4,7 +4,6 @@ import Main from '../layouts/Main';
 import { graphql } from 'gatsby';
 
 const IndexPage = ({ data, location }) => {
-  console.log(data);
   return (
     <Main location={location}>
       <div className="container max-w-5xl mx-auto px-4 lg:px-0">

@@ -4,7 +4,6 @@ import Main from '../../layouts/Main';
 import { graphql } from 'gatsby';
 
 const IndexPage = ({ data, location }) => {
-  console.log(data);
   return (
     <Main location={location}>
       <div className="max-w-5xl mx-auto">
@@ -38,7 +37,7 @@ export default IndexPage;
 export const query = graphql`
   query EssayQuery {
     allFile(
-      filter: { sourceInstanceName: { eq: "essays" } }
+      filter: { sourceInstanceName: { eq: "essays" }, extension: { eq: "mdx" } }
       sort: { fields: childMdx___frontmatter___sort, order: ASC }
     ) {
       nodes {
