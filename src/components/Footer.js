@@ -6,7 +6,7 @@ import Twitter from './icons/Twitter';
 
 const Footer = () => {
   return (
-    <div className="mt-24 mb-10 px-4 lg:px-0">
+    <div className="max-w-5xl mx-auto mt-24 mb-10 px-4 lg:px-0">
       <form
         className="mb-10"
         onSubmit={(e) => {

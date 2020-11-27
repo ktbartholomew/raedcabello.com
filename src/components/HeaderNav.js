@@ -14,7 +14,7 @@ const HeaderNav = ({ location }) => {
     return '';
   };
   return (
-    <div className="sm:grid sm:grid-cols-2 sm:gap-4 mt-4 mb-16 px-4 lg:px-0 text-lg font-accent">
+    <div className="max-w-5xl mx-auto sm:grid sm:grid-cols-2 sm:gap-4 mt-4 mb-16 px-4 lg:px-0 text-lg font-accent">
       <div className="mb-4 sm:mb-0">
         <Link to="/" className="block py-3">
           <span
